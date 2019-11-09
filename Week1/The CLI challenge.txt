@@ -1,0 +1,16 @@
+Homework of the Week 1 - The CLI challenge
+
+1-How do I create a hidden file or folder? 
+--> mkdir .foldername
+
+1.5- How do I display it in the CLI?
+--> touch .filename
+
+2-How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+--> mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+
+3-How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+--> echo -e “first message\nsecond message” >> filename.txt
