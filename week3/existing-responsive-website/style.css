@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+
+    font-size: 105%;
+  }
+
+body { margin: 3px;}
+
+
+
+/*  start-up-nav */
+
+body {margin: 0;
+background-color:#f8f8ff;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: steelblue;}
+
+ul.topnav li.right {float: right;}
+
+/*  end-up-nav */
+
+
+
+img {
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 50px;
+  }
+h1 { font-size: 500% }
+h2 { font-size: 300% }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.grid-fiex1, grid-fiex1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-item {
+    width: calc(50% - 10px) ;
+    float: left;
+    min-height: 400px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.grid-item:nth-child(5) {
+  width: calc(100% - 10px) ;
+  background:slategray;
+}
+
+section {
+clear: both;
+}
+
+
+#lo-go {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 60%;
+}
+
+.z-ver {
+  background-image: url('images/zorgverzekering.jpg'); 
+  background-size: cover;
+}
+
+.a1400 {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.b1400:hover {background-color: yellow;}
+
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+
+  .grid-item {
+    width: calc(100% - 10px) ;
+  }
+}
